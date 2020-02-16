@@ -36,8 +36,8 @@ jobs:
       # Run dotnet build and publish
       - name: dotnet build and publish
         run: |
-          dotnet build ~/LolWebapi/LolWebApi/LolWebApi.csproj --configuration Release
-          dotnet publish ~/LolWebapi/LolWebApi/LolWebApi.csproj -c Release -o myapp 
+          dotnet build ./src/LolWebapi/LolWebApi/LolWebApi.csproj --configuration Release
+          dotnet publish ./src/LolWebapi/LolWebApi/LolWebApi.csproj -c Release -o myapp 
           
       # Deploy to Azure Web apps
       #- name: 'Run Azure webapp deploy action using publish profile credentials'
